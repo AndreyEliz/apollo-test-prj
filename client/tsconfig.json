@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "es5",
+        "module": "es6",
+        "baseUrl": "src",
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "allowJs": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["./dist"],
+    "include": ["src/**/*"]
+}
