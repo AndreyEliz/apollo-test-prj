@@ -4,19 +4,22 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prebuild": "eslint --cache --ext .ts ",
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint --cache --ext .js,.ts, "
   },
   "author": "Andrey Elizarov",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.7",
     "@types/node": "^14.6.0",
-    "tslint": "^6.1.3",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.2",
+    "eslint": "^7.7.0",
+    "@typescript-eslint/parser": "^3.10.1",
+    "@typescript-eslint/eslint-plugin": "^3.10.1"
   },
   "dependencies": {
     "express": "^4.17.1"

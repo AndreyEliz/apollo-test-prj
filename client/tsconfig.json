@@ -13,6 +13,6 @@
         "noImplicitAny": false,
         "allowSyntheticDefaultImports": true
     },
-    "exclude": ["./dist"],
+    "exclude": ["dist", "node_modules"],
     "include": ["src/**/*"]
 }
