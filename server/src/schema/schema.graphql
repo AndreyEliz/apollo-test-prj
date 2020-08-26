@@ -1,0 +1,14 @@
+type Query {
+  games: [GameInfo]!
+}
+
+type GameInfo {
+    id: ID!
+    teamA: String!
+    teamB: String!
+    goals: [Int]!
+    teamACards: Int!
+    teamBCards: Int!
+    gameStatus: String!
+    minute: Int!
+}
