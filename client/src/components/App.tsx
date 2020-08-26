@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const App = () => {
+const App: React.FC = () => {
     return (
     <div>
         <h1>Welcome to React with Typescript</h1>
