@@ -9,6 +9,25 @@ type GameInfo {
     goals: [Int]!
     teamACards: Int!
     teamBCards: Int!
-    gameStatus: String!
+    gameStatus: Int!
     minute: Int!
+}
+
+input GameInfoInput {
+    id: ID!
+    teamA: String!
+    teamB: String!
+    goals: [Int]!
+    teamACards: Int!
+    teamBCards: Int!
+    gameStatus: Int!
+    minute: Int!
+}
+
+type Subscription {
+    games: [GameInfo]
+}
+
+type Mutation {
+    changeGame: [GameInfo]
 }
